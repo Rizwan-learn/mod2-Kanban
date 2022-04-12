@@ -65,7 +65,6 @@ function loadCards(cards) {
   </div>
     `;
   }
-  console.log(cardDisplay);
   cardDisplayContainer.innerHTML = cardDisplay;
 }
 
