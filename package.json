@@ -38,6 +38,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.8.1",
     "lodash": "^4.17.21"
   },
   "main": "webpack.config.js"
