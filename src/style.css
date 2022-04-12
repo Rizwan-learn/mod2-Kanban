@@ -50,3 +50,7 @@ li {
 .likes-styles {
   display: flex;
 }
+
+.card-1 img {
+  height: 10rem;
+}
