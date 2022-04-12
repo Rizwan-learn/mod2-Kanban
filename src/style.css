@@ -24,12 +24,11 @@ li {
   height: 25px;
   background-color: white;
   width: 6rem;
+  position: absolute;
+  right: 0;
 }
 
 .space-cards {
-  /* display: grid;
-  column-gap: 50px;
-  grid-template-columns: auto auto auto; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
