@@ -1,5 +1,7 @@
 import './style.css';
 
+
+
 const url_api = 'https://private-anon-af31af2f40-carsapi1.apiary-mock.com/cars';
 
 async function getCars() {
@@ -22,7 +24,7 @@ async function getCars() {
         <div class="row">
           <h5 class="card-title col-md-6 font-weight-bold">${card.model}</h5>
           <button class="col-md-6 likes-btn likes-styles text-secondary">
-            Likes
+          <i class="fa-light fa-heart"></i>
             <span class="badge-1 bg-danger">${card.horsepower}</span>
           </button>
         </div>
