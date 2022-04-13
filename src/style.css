@@ -47,10 +47,33 @@ li {
   margin-left: 5px;
 }
 
+.comm-2 {
+  width: 10rem;
+}
+
 .likes-styles {
   display: flex;
 }
 
 .card-1 img {
   height: 10rem;
+}
+
+.modal-body img {
+  width: 30rem;
+}
+
+.image-popup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.commentsall {
+  font-size: 10px !important;
+}
+
+.comments-bg {
+  background-color: rgb(238, 236, 236);
+  padding: 10px;
 }
