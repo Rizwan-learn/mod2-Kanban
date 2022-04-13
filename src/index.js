@@ -26,7 +26,7 @@ async function getCars() {
             <span class="badge-1 bg-danger">${card.horsepower}</span>
           </button>
         </div>
-        <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of thecard\'s content.</p>
+        <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of thecard's content.</p>
         <a href="#" class="btn btn-danger rounded-0">Comments</a>
         <a href="#" class="btn btn-success rounded-0">Reservations</a>
       </div>
