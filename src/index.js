@@ -22,10 +22,10 @@ async function getCars() {
         <div class="row">
           <h5 class="card-title col-md-6 font-weight-bold">${card.model}</h5>
           <div class="col-md-6 likes-btn likes-styles text-secondary">
-            <button class="like-btn">
-              <span id="icon"><i class="fa-regular fa-thumbs-up"></i></i></span>
-              <span id=count"> 0 </span> Like
-            </button> 
+          <button class="like-btn">
+          <span id="icon"><i class="fa-regular fa-thumbs-up"></i></i></span>
+          <span id="count"> 0 </span> Like
+          </button> 
           </div>
         </div>
         <span class="badge-1 bg-danger">${card.horsepower} Horsepower</span>
@@ -42,23 +42,22 @@ async function getCars() {
 }
 getCars();
 
-
-//like buttons
+// like buttons
 
 const likeBtn = document.querySelector('.like-btn');
-let likeIcon = document.querySelector('#icon');
-let count = document.querySelector('#count');
+const likeIcon = document.querySelector('#icon');
+const count = document.querySelector('#count');
 
 let clicked = false;
 
 likeBtn.addEventListener('click', () => {
-  if(!clicked){
+  if (!clicked) {
     clicked = true;
-    likeIcon.innerHTML = '<i class="fas-regular fa-thumbs-up">'
+    likeIcon.innerHTML = '<i class="fa-solid fa-thumbs-up"></i>';
     count.textContent++;
   } else {
     clicked = false;
-    likeIcon.innerHTML = '<i class="far-regular fa-thumbs-up">'
+    likeIcon.innerHTML = '<i class="fa-regular fa-thumbs-up"></i>';
     count.textContent--;
   }
-})
+});
