@@ -43,3 +43,5 @@ async function getCars() {
   loadCards(cards);
 }
 getCars();
+
+const commentApi = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/';
