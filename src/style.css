@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 li {
   list-style: none;
 }
@@ -53,4 +54,18 @@ li {
 
 .card-1 img {
   height: 10rem;
+}
+
+.like-btn {
+  padding: 10px 15px;
+  background-color: #0080ff;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: "open Sans", sans-serif;
+  border: none;
+  color: #e8efff;
+  cursor: pointer;
+  outline: none;
 }
