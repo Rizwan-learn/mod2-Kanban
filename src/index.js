@@ -5,7 +5,7 @@ const url_api = 'https://private-anon-af31af2f40-carsapi1.apiary-mock.com/cars';
 async function getCars() {
   const response = await fetch(url_api);
   const cards = await response.json();
-  const { img_url, model } = cards;
+  const { img_url, model, horsepower } = cards;
 
   function loadCards(cards) {
     const cardDisplayContainer = document.querySelector('.space-cards');
@@ -23,7 +23,7 @@ async function getCars() {
           <h5 class="card-title col-md-6 font-weight-bold">${card.model}</h5>
           <button class="col-md-6 likes-btn likes-styles text-secondary">
             Likes
-            <span class="badge-1 bg-danger">50</span>
+            <span class="badge-1 bg-danger">${card.horsepower}</span>
           </button>
         </div>
         <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of thecard\'s content.</p>
