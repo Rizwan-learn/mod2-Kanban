@@ -26,14 +26,13 @@ async function getCars() {
         <div class="row">
           <h5 class="card-title col-md-6 font-weight-bold">${card.model}</h5>
           <button class="col-md-6 likes-btn likes-styles text-secondary">
-            Likes
+          <i class="fa-light fa-heart"></i>
             <span class="badge-1 bg-danger">${card.horsepower}</span>
           </button>
         </div>
         <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of thecard's content.</p>
-        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" id="${card.id}">Comments</button>
-        <button type="button" class="btn btn-success rounded-0" id="${card.id}">Reservations</button>
-        
+        <a href="#" class="btn btn-danger rounded-0">Comments</a>
+        <a href="#" class="btn btn-success rounded-0">Reservations</a>
       </div>
     </div>
       `;
@@ -43,5 +42,3 @@ async function getCars() {
   loadCards(cards);
 }
 getCars();
-
-const commentApi = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/';
