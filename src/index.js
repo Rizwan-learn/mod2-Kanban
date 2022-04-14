@@ -3,6 +3,7 @@ import './style.css';
 
 const url_api = 'https://private-anon-af31af2f40-carsapi1.apiary-mock.com/cars';
 
+// Get api info and dispay on screen cards
 async function getCars() {
   const response = await fetch(url_api);
   const cards = await response.json();
@@ -14,6 +15,7 @@ async function getCars() {
   const cardDisplayContainer = document.querySelector('.space-cards');
   let cardDisplay = '';
 
+  // dispay cards
   // eslint-disable-next-line no-restricted-syntax
   for (const card of cards) {
     cardDisplay += `
@@ -38,6 +40,7 @@ async function getCars() {
   }
   cardDisplayContainer.innerHTML = cardDisplay;
 
+  // comment popup display
   const modal = () => {
     const modaldisplay = document.querySelector('.modal');
     modaldisplay.innerHTML = `
