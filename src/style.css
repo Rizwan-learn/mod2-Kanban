@@ -150,7 +150,7 @@ textarea {
 }
 
 footer {
-  border-top: 5px solid black;
+  border-top: 5px solid rgb(0, 0, 0);
 }
 
 footer h4 {
@@ -194,8 +194,4 @@ nav {
 
 .cars-nav-element {
   margin-left: 1%;
-}
-
-.left-block img {
-  width: 65px;
 }
