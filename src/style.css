@@ -148,3 +148,51 @@ textarea {
 .hidden {
   display: none;
 }
+
+footer {
+  border-top: 5px solid rgb(0, 0, 0);
+}
+
+footer h4 {
+  color: rgb(45, 45, 45);
+  margin-left: 2%;
+}
+
+.logo-img {
+  width: 250px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 20px 0 0 50px;
+  justify-content: flex-end;
+}
+
+.left-block,
+.right-block {
+  display: flex;
+  font-size: 30px;
+  gap: 20px;
+  list-style: none;
+}
+
+.poke-img {
+  width: 250px;
+}
+
+.right-block li {
+  padding: 0 20px 0 0;
+}
+
+.carnim {
+  display: flex;
+  margin-left: 8%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cars-nav-element {
+  margin-left: 1%;
+}
