@@ -175,7 +175,6 @@ export const showCommentModal = async (e) => {
     '#modal-container .modal-items .img-container .close',
   );
   close.addEventListener('click', () => {
-    console.log('close');
     modalContainer.classList.add('hidden');
     modalContainer.classList.remove('show');
   });
