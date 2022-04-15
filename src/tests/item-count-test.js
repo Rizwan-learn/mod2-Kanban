@@ -1,7 +1,6 @@
-
-
 // eslint-disable-next-line import/no-unresolved
 import getAllCarsCount from '../src/Modules/home/home-app.js';
+
 document.body.innerHTML = `  <header>
     <nav>
         <div class="left-block">
@@ -14,6 +13,7 @@ document.body.innerHTML = `  <header>
         </ul>
     </nav>
 </header>`;
+
 describe('product item count', () => {
   test('Product Count', () => {
     const cards = ['card1', 'card2', 'card3'];
