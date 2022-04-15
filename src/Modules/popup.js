@@ -1,4 +1,4 @@
-const modal = () => {
+const modal = (id) => {
   const modaldisplay = document.querySelector('.modal');
   modaldisplay.innerHTML = `
     <div class="modal-dialog modal-lg">
@@ -57,6 +57,7 @@ const modal = () => {
         </div>
       </div>
       <div class="modal-footer me-auto">
+      ${id}
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-success">Comment</button>
       </div>
