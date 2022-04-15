@@ -27,6 +27,7 @@ export const carRender = (
           class="reservation-button px-2 py-1 border-2 hover:border-2 hover:shadow-sm hover:text-white hover:bg-sky-500"
           type="button">Reservation</button>
       </div>
+      
     </div>`;
 
 export const fileExists = (imageUrl) => {
