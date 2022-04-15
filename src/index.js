@@ -26,10 +26,12 @@ async function getCars() {
       <div class="card-body">
         <div class="row">
           <h5 class="card-title col-md-6 font-weight-bold">${card.model}</h5>
-          <button class="col-md-6 likes-btn likes-styles text-secondary">
-          <i class="fa-light fa-heart"></i>
-            <span class="badge-1 bg-danger">${card.horsepower}</span>
-          </button>
+          <div class="col-md-6 likes-btn likes-styles text-secondary">
+          <button class="like-btn">
+          <span id="icon"><i class="fa-regular fa-thumbs-up"></i></i></span>
+          <span id="count"> 0 </span> Like
+          </button> 
+          </div>
         </div>
         <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of thecard's content.</p>
         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" id="${id}">Comments</button>
@@ -115,3 +117,23 @@ async function getCars() {
   modal();
 }
 getCars();
+
+// like buttons
+
+const likeBtn = document.querySelector('.like-btn');
+const likeIcon = document.querySelector('#icon');
+const count = document.querySelector('#count');
+
+let clicked = false;
+
+likeBtn.addEventListener('click', () => {
+  if (!clicked) {
+    clicked = true;
+    likeIcon.innerHTML = '<i class="fa-solid fa-thumbs-up"></i>';
+    count.textContent++;
+  } else {
+    clicked = false;
+    likeIcon.innerHTML = '<i class="fa-regular fa-thumbs-up"></i>';
+    count.textContent--;
+  }
+});

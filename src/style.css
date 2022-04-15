@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 li {
   list-style: none;
 }
@@ -59,21 +61,17 @@ li {
   height: 10rem;
 }
 
-.modal-body img {
-  width: 30rem;
-}
-
-.image-popup {
-  width: 100%;
+.like-btn {
+  padding: 10px 15px;
+  background-color: #0080ff;
+  font-size: 15px;
   display: flex;
-  justify-content: center;
-}
-
-.commentsall {
-  font-size: 10px !important;
-}
-
-.comments-bg {
-  background-color: rgb(238, 236, 236);
-  padding: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: "open Sans", sans-serif;
+  border: none;
+  color: #e8efff;
+  cursor: pointer;
+  outline: none;
+  margin-right: 200px;
 }
