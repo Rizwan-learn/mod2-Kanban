@@ -20,6 +20,7 @@ export const carRender = (
           <span class="text-black"><span class="likes">${likes}</span> <span>likes</span></span>
         </div>
       </div>
+      <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of thecard's content.</p>
       <div class="car-buttons flex flex-col gap-3 p-2 ">
         <button id="model" class="comment-button px-2 py-1 border-2 hover:border-2 hover:shadow-sm hover:text-white hover:bg-sky-500"
           type="button">Comment</button>
@@ -27,7 +28,7 @@ export const carRender = (
           class="reservation-button px-2 py-1 border-2 hover:border-2 hover:shadow-sm hover:text-white hover:bg-sky-500"
           type="button">Reservation</button>
       </div>
-      
+
     </div>`;
 
 export const fileExists = (imageUrl) => {
