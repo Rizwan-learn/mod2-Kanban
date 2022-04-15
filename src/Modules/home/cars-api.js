@@ -1,5 +1,6 @@
 import Car from './car.js';
 import { goodCarsId } from './home-utils.js.js';
+
 export default class CarsApi {
   constructor(
     url = 'https://private-anon-66fbb79774-carsapi1.apiary-mock.com/',
@@ -9,7 +10,9 @@ export default class CarsApi {
     this.goodCarsId = goodCarsId;
     this.dataPromise = this.getAllCars().then((data) => this.#formatCars(data));
   }
+
   getDataPromise = () => this.dataPromise;
+
   #formatCars = (data) => {
     const dataObj = {};
     data.forEach((car) => {
@@ -18,7 +21,9 @@ export default class CarsApi {
     });
     return dataObj;
   };
+
   getCarEndpointFromId = (id) => `${this.allCarsEndpoint}/${id}`;
+
   #formatData = (data) => data.map((obj) => {
     const car = new Car();
     car.year = obj.year;
@@ -30,6 +35,7 @@ export default class CarsApi {
     car.imgUrl = obj.img_url;
     return car;
   });
+
   getAllCars = async (url = this.allCarsEndpoint) => {
     const response = await fetch(url, {
       method: 'GET',
