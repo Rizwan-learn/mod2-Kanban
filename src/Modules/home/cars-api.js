@@ -1,4 +1,5 @@
 import Car from './car.js';
+// eslint-disable-next-line import/newline-after-import
 import { goodCarsId } from './home-utils.js';
 export default class CarsApi {
   constructor(
