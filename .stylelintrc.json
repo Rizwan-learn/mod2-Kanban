@@ -17,4 +17,13 @@
       "csstree/validator": true
     },
     "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css", "**/*.js", "**/*.jsx"]
-  }
+  },
+
+  {
+    "extends": "stylelint-config-recommended",
+    "ignoreFiles": [
+        "app/bootstrap/**/*.less"
+    ]
+}
+
+  
