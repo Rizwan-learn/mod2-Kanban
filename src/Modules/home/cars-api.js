@@ -1,6 +1,5 @@
 import Car from './car.js';
-import { goodCarsId } from './home-utils.js.js';
-
+import { goodCarsId } from './home-utils.js';
 export default class CarsApi {
   constructor(
     url = 'https://private-anon-66fbb79774-carsapi1.apiary-mock.com/',

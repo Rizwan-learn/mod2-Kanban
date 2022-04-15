@@ -20,7 +20,6 @@ export const carRender = (
           <span class="text-black"><span class="likes">${likes}</span> <span>likes</span></span>
         </div>
       </div>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of thecard's content.</p>
       <div class="car-buttons flex flex-col gap-3 p-2 ">
         <button id="model" class="comment-button px-2 py-1 border-2 hover:border-2 hover:shadow-sm hover:text-white hover:bg-sky-500"
           type="button">Comment</button>
@@ -29,12 +28,16 @@ export const carRender = (
           type="button">Reservation</button>
       </div>
     </div>`;
+
 export const fileExists = (imageUrl) => {
   const http = new XMLHttpRequest();
+
   http.open('HEAD', imageUrl, false);
   http.send();
+
   return Number(http.status) !== 404;
 };
+
 export const goodCarsId = [
   1, 5, 7, 8, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 25,
   26, 29, 31, 32, 34, 35, 39, 41, 43, 48, 49, 50, 51, 53,
