@@ -2,53 +2,94 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kanban board</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Collectors</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand font-weight-bold" href="#">My Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">SpaceShip</a>
-            </li>
-            <li class="nav-item"> <a class="nav-link active" href="#"> Planets </a> </li>
-            <li class="nav-item"> <a class="nav-link active" href="#"> Races </a> </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <a href="#">Cars <span class="cars-nav-element px-2 bg-white rounded-full">0</span></a>
   </header>
-  <div class="container">
-    <div class="card border-0 text-center">
-      <div class="card-body">
-        <div class="dynamic-cards">
-          <div class="space-cards">
+  <section class="w-full h-full popup-bg pt-5 z-10 top-0 left-0 bottom-28 fixed overflow-auto hidden"
+    id="modal-container"></section>
+  <main
+    class="p-6 grid gap-2 grid-rows-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-black items-stretch full-container">
+    <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto h-full">
+      <div class="animate-pulse flex space-x-4">
+        <div class="rounded-full bg-slate-700 h-10 w-10">
+        </div>
+        <div class="flex-1 space-y-6 py-1">
+          <div class="h-2 bg-slate-700 rounded"></div>
+          <div class="space-y-3">
+            <div class="grid grid-cols-3 gap-4">
+              <div class="h-2 bg-slate-700 rounded col-span-2">
+              </div>
+              <div class="h-2 bg-slate-700 rounded col-span-1">
+              </div>
+            </div>
+            <div class="h-2 bg-slate-700 rounded"></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="text-center">
-    <h4> Copyright&copy; 2022</h4>
+    <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto h-full">
+      <div class="animate-pulse flex space-x-4">
+        <div class="rounded-full bg-slate-700 h-10 w-10">
+        </div>
+        <div class="flex-1 space-y-6 py-1">
+          <div class="h-2 bg-slate-700 rounded"></div>
+          <div class="space-y-3">
+            <div class="grid grid-cols-3 gap-4">
+              <div class="h-2 bg-slate-700 rounded col-span-2">
+              </div>
+              <div class="h-2 bg-slate-700 rounded col-span-1">
+              </div>
+            </div>
+            <div class="h-2 bg-slate-700 rounded"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto h-full">
+      <div class="animate-pulse flex space-x-4">
+        <div class="rounded-full bg-slate-700 h-10 w-10">
+        </div>
+        <div class="flex-1 space-y-6 py-1">
+          <div class="h-2 bg-slate-700 rounded"></div>
+          <div class="space-y-3">
+            <div class="grid grid-cols-3 gap-4">
+              <div class="h-2 bg-slate-700 rounded col-span-2">
+              </div>
+              <div class="h-2 bg-slate-700 rounded col-span-1">
+              </div>
+            </div>
+            <div class="h-2 bg-slate-700 rounded"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto h-full">
+      <div class="animate-pulse flex space-x-4">
+        <div class="rounded-full bg-slate-700 h-10 w-10">
+        </div>
+        <div class="flex-1 space-y-6 py-1">
+          <div class="h-2 bg-slate-700 rounded"></div>
+          <div class="space-y-3">
+            <div class="grid grid-cols-3 gap-4">
+              <div class="h-2 bg-slate-700 rounded col-span-2">
+              </div>
+              <div class="h-2 bg-slate-700 rounded col-span-1">
+              </div>
+            </div>
+            <div class="h-2 bg-slate-700 rounded"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
