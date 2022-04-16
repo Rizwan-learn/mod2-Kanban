@@ -15,7 +15,7 @@
 ## Live Demo (if available)
 
 [Live Demo Link](https://rizwan-learn.github.io/mod2-Kanban/) <br>
-[Live demonstration Link](https://www.youtube.com/watch?v=mR17kJi45D0)
+[Live Demonstration Link](https://www.youtube.com/watch?v=mR17kJi45D0)
 
 
 ## Getting Started
