@@ -1,15 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Kanban board: Car collector
 
-> Description the project.
-
+> Customers who wish to rent a car can use CarCollectors' website. Using the Vehicles API, the visitor may explore a vast selection of stunning cars. It also allows users to like, comment on, and reserve a certain automobile. The Involvement API is used to save all data.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- html
+- css
+- javascript
+- jest
+- webpack
 
 ## Live Demo (if available)
 
@@ -17,40 +18,28 @@
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
+- Git clone
+- npm install
 
 ### Run tests
+npm test
 
 ### Deployment
-
-
+Gh-pages
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@regiss05](https://github.com/regiss05)
+- Twitter: [@regiss05](https://twitter.com/regissmukubiza)
+- LinkedIn: [regiss05](https://www.linkedin.com/in/regiss-mukubiza-1bab841b3/)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@rizwanhasan](https://github.com/Rizwan-learn/)
+- Twitter: [@rizwanhasan](https://twitter.com/twitterhandle)
+- LinkedIn: [rizwanhasan](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
