@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rizwan-learn.github.io/mod2-Kanban/)
 
 
 ## Getting Started
