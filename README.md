@@ -12,7 +12,7 @@
 - jest
 - webpack
 
-##[Live Demo Link](https://rizwan-learn.github.io/mod2-Kanban/)
+## [Live Demo Link](https://rizwan-learn.github.io/mod2-Kanban/)
 ## [Live Demonstration Link](https://www.youtube.com/watch?v=mR17kJi45D0)
 
 
