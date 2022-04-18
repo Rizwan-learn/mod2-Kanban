@@ -1,46 +1,60 @@
 {
-  "name": "mod2",
+  "name": "mv-modules2-capstone",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
-  "private": true,
+  "private": "true",
   "scripts": {
-    "webpack": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack serve --open"
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "lint:js": "eslint ./src/**/*.js",
+    "lint:css": "stylelint ./src/*.{css,scss}",
+    "lintFix:js": "eslint ./src/**/*.js --fix",
+    "lintFix:css": "stylelint ./src/*.{css,scss} --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deyemiobaa/Webpack-Boilerplate.git"
+    "url": "git+https://github.com/Sboursen/mv-modules2-capstone.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Sboursen",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/deyemiobaa/Webpack-Boilerplate/issues"
+    "url": "https://github.com/Sboursen/mv-modules2-capstone/issues"
   },
-  "homepage": "https://github.com/deyemiobaa/Webpack-Boilerplate#readme",
+  "homepage": "https://github.com/Sboursen/mv-modules2-capstone#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@types/jest": "^27.4.1",
+    "autoprefixer": "^10.4.2",
     "babel-eslint": "^10.1.0",
-    "css-loader": "^6.7.1",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.26.0",
-    "hint": "^6.1.11",
+    "eslint-plugin-import": "^2.25.4",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.5.1",
+    "mini-css-extract-plugin": "^2.5.3",
+    "postcss": "^8.4.7",
+    "postcss-loader": "^6.2.1",
     "style-loader": "^3.3.1",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0",
-    "webpack": "^5.70.0",
+    "stylelint": "^14.5.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-csstree-validator": "^2.0.0",
+    "stylelint-scss": "^4.1.0",
+    "tailwindcss": "^3.0.23",
+    "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "bootstrap-icons": "^1.8.1",
-    "lodash": "^4.17.21"
-  },
-  "main": "webpack.config.js"
+    "@babel/runtime": "^7.17.2"
+  }
 }
