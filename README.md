@@ -12,11 +12,9 @@
 - jest
 - webpack
 
-## Live Demo (if available)
+##[Live Demo Link](https://rizwan-learn.github.io/mod2-Kanban/)
+## [Live Demonstration Link](https://www.youtube.com/watch?v=mR17kJi45D0)
 
-[Live Demo Link](https://rizwan-learn.github.io/mod2-Kanban/) <br>
-## Presentation
-[Live Demonstration Link](https://www.youtube.com/watch?v=mR17kJi45D0)
 
 
 ## Getting Started
@@ -47,17 +45,9 @@ Gh-pages
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
